@@ -321,10 +321,557 @@ module.exports = {
 
         "bg-repeat", "bg-no-repeat", "bg-repeat-x", "bg-repeat-y", "bg-repeat-round", "bg-repeat-space",
 
-        "bg-auto", "bg-cover", "bg-contain"
+        "bg-auto", "bg-cover", "bg-contain",
+
+        // ---
+
+        // border-radius, border-width, border-color
+
+        // Border Radius
+        "rounded-none", "rounded-sm", "rounded", "rounded-md", "rounded-lg", "rounded-xl", "rounded-2xl", "rounded-3xl", "rounded-full",
+        "rounded-t-none", "rounded-t-sm", "rounded-t", "rounded-t-md", "rounded-t-lg", "rounded-t-xl", "rounded-t-2xl", "rounded-t-3xl", "rounded-t-full",
+        "rounded-b-none", "rounded-b-sm", "rounded-b", "rounded-b-md", "rounded-b-lg", "rounded-b-xl", "rounded-b-2xl", "rounded-b-3xl", "rounded-b-full",
+        "rounded-l-none", "rounded-l-sm", "rounded-l", "rounded-l-md", "rounded-l-lg", "rounded-l-xl", "rounded-l-2xl", "rounded-l-3xl", "rounded-l-full",
+        "rounded-r-none", "rounded-r-sm", "rounded-r", "rounded-r-md", "rounded-r-lg", "rounded-r-xl", "rounded-r-2xl", "rounded-r-3xl", "rounded-r-full",
+        "rounded-tl-none", "rounded-tl-sm", "rounded-tl", "rounded-tl-md", "rounded-tl-lg", "rounded-tl-xl", "rounded-tl-2xl", "rounded-tl-3xl", "rounded-tl-full",
+        "rounded-tr-none", "rounded-tr-sm", "rounded-tr", "rounded-tr-md", "rounded-tr-lg", "rounded-tr-xl", "rounded-tr-2xl", "rounded-tr-3xl", "rounded-tr-full",
+        "rounded-bl-none", "rounded-bl-sm", "rounded-bl", "rounded-bl-md", "rounded-bl-lg", "rounded-bl-xl", "rounded-bl-2xl", "rounded-bl-3xl", "rounded-bl-full",
+        "rounded-br-none", "rounded-br-sm", "rounded-br", "rounded-br-md", "rounded-br-lg", "rounded-br-xl", "rounded-br-2xl", "rounded-br-3xl", "rounded-br-full",
+
+        // Border Width
+        "border-0", "border", "border-2", "border-4", "border-8",
+        "border-t-0", "border-t", "border-t-2", "border-t-4", "border-t-8",
+        "border-b-0", "border-b", "border-b-2", "border-b-4", "border-b-8",
+        "border-l-0", "border-l", "border-l-2", "border-l-4", "border-l-8",
+        "border-r-0", "border-r", "border-r-2", "border-r-4", "border-r-8",
+
+        // Border Color Lengkap
+        "border-transparent", "border-current", "border-black", "border-white",
+        "border-slate-50", "border-slate-100", "border-slate-200", "border-slate-300", "border-slate-400", "border-slate-500", "border-slate-600", "border-slate-700", "border-slate-800", "border-slate-900",
+        "border-gray-50", "border-gray-100", "border-gray-200", "border-gray-300", "border-gray-400", "border-gray-500", "border-gray-600", "border-gray-700", "border-gray-800", "border-gray-900",
+        "border-zinc-50", "border-zinc-100", "border-zinc-200", "border-zinc-300", "border-zinc-400", "border-zinc-500", "border-zinc-600", "border-zinc-700", "border-zinc-800", "border-zinc-900",
+        "border-neutral-50", "border-neutral-100", "border-neutral-200", "border-neutral-300", "border-neutral-400", "border-neutral-500", "border-neutral-600", "border-neutral-700", "border-neutral-800", "border-neutral-900",
+        "border-stone-50", "border-stone-100", "border-stone-200", "border-stone-300", "border-stone-400", "border-stone-500", "border-stone-600", "border-stone-700", "border-stone-800", "border-stone-900",
+        "border-red-50", "border-red-100", "border-red-200", "border-red-300", "border-red-400", "border-red-500", "border-red-600", "border-red-700", "border-red-800", "border-red-900",
+        "border-orange-50", "border-orange-100", "border-orange-200", "border-orange-300", "border-orange-400", "border-orange-500", "border-orange-600", "border-orange-700", "border-orange-800", "border-orange-900",
+        "border-amber-50", "border-amber-100", "border-amber-200", "border-amber-300", "border-amber-400", "border-amber-500", "border-amber-600", "border-amber-700", "border-amber-800", "border-amber-900",
+        "border-yellow-50", "border-yellow-100", "border-yellow-200", "border-yellow-300", "border-yellow-400", "border-yellow-500", "border-yellow-600", "border-yellow-700", "border-yellow-800", "border-yellow-900",
+        "border-lime-50", "border-lime-100", "border-lime-200", "border-lime-300", "border-lime-400", "border-lime-500", "border-lime-600", "border-lime-700", "border-lime-800", "border-lime-900",
+        "border-green-50", "border-green-100", "border-green-200", "border-green-300", "border-green-400", "border-green-500", "border-green-600", "border-green-700", "border-green-800", "border-green-900",
+        "border-emerald-50", "border-emerald-100", "border-emerald-200", "border-emerald-300", "border-emerald-400", "border-emerald-500", "border-emerald-600", "border-emerald-700", "border-emerald-800", "border-emerald-900",
+        "border-teal-50", "border-teal-100", "border-teal-200", "border-teal-300", "border-teal-400", "border-teal-500", "border-teal-600", "border-teal-700", "border-teal-800", "border-teal-900",
+        "border-cyan-50", "border-cyan-100", "border-cyan-200", "border-cyan-300", "border-cyan-400", "border-cyan-500", "border-cyan-600", "border-cyan-700", "border-cyan-800", "border-cyan-900",
+        "border-sky-50", "border-sky-100", "border-sky-200", "border-sky-300", "border-sky-400", "border-sky-500", "border-sky-600", "border-sky-700", "border-sky-800", "border-sky-900",
+        "border-blue-50", "border-blue-100", "border-blue-200", "border-blue-300", "border-blue-400", "border-blue-500", "border-blue-600", "border-blue-700", "border-blue-800", "border-blue-900",
+        "border-indigo-50", "border-indigo-100", "border-indigo-200", "border-indigo-300", "border-indigo-400", "border-indigo-500", "border-indigo-600", "border-indigo-700", "border-indigo-800", "border-indigo-900",
+        "border-violet-50", "border-violet-100", "border-violet-200", "border-violet-300", "border-violet-400", "border-violet-500", "border-violet-600", "border-violet-700", "border-violet-800", "border-violet-900",
+        "border-purple-50", "border-purple-100", "border-purple-200", "border-purple-300", "border-purple-400", "border-purple-500", "border-purple-600", "border-purple-700", "border-purple-800", "border-purple-900",
+        "border-fuchsia-50", "border-fuchsia-100", "border-fuchsia-200", "border-fuchsia-300", "border-fuchsia-400", "border-fuchsia-500", "border-fuchsia-600", "border-fuchsia-700", "border-fuchsia-800", "border-fuchsia-900",
+        "border-pink-50", "border-pink-100", "border-pink-200", "border-pink-300", "border-pink-400", "border-pink-500", "border-pink-600", "border-pink-700", "border-pink-800", "border-pink-900",
+        "border-rose-50", "border-rose-100", "border-rose-200", "border-rose-300", "border-rose-400", "border-rose-500", "border-rose-600", "border-rose-700", "border-rose-800", "border-rose-900",
+
+        // ---
+
+        // border-style, outline-width, outline-color
+
+        // Border Style
+        "border-solid", "border-dashed", "border-dotted", "border-double", "border-hidden", "border-none",
+
+        // Outline Width
+        "outline-0", "outline-1", "outline-2", "outline-4", "outline-8",
+
+        // Outline Color Lengkap
+        "outline-transparent", "outline-current", "outline-black", "outline-white",
+        "outline-slate-50", "outline-slate-100", "outline-slate-200", "outline-slate-300", "outline-slate-400", "outline-slate-500", "outline-slate-600", "outline-slate-700", "outline-slate-800", "outline-slate-900",
+        "outline-gray-50", "outline-gray-100", "outline-gray-200", "outline-gray-300", "outline-gray-400", "outline-gray-500", "outline-gray-600", "outline-gray-700", "outline-gray-800", "outline-gray-900",
+        "outline-zinc-50", "outline-zinc-100", "outline-zinc-200", "outline-zinc-300", "outline-zinc-400", "outline-zinc-500", "outline-zinc-600", "outline-zinc-700", "outline-zinc-800", "outline-zinc-900",
+        "outline-neutral-50", "outline-neutral-100", "outline-neutral-200", "outline-neutral-300", "outline-neutral-400", "outline-neutral-500", "outline-neutral-600", "outline-neutral-700", "outline-neutral-800", "outline-neutral-900",
+        "outline-stone-50", "outline-stone-100", "outline-stone-200", "outline-stone-300", "outline-stone-400", "outline-stone-500", "outline-stone-600", "outline-stone-700", "outline-stone-800", "outline-stone-900",
+        "outline-red-50", "outline-red-100", "outline-red-200", "outline-red-300", "outline-red-400", "outline-red-500", "outline-red-600", "outline-red-700", "outline-red-800", "outline-red-900",
+        "outline-orange-50", "outline-orange-100", "outline-orange-200", "outline-orange-300", "outline-orange-400", "outline-orange-500", "outline-orange-600", "outline-orange-700", "outline-orange-800", "outline-orange-900",
+        "outline-amber-50", "outline-amber-100", "outline-amber-200", "outline-amber-300", "outline-amber-400", "outline-amber-500", "outline-amber-600", "outline-amber-700", "outline-amber-800", "outline-amber-900",
+        "outline-yellow-50", "outline-yellow-100", "outline-yellow-200", "outline-yellow-300", "outline-yellow-400", "outline-yellow-500", "outline-yellow-600", "outline-yellow-700", "outline-yellow-800", "outline-yellow-900",
+        "outline-lime-50", "outline-lime-100", "outline-lime-200", "outline-lime-300", "outline-lime-400", "outline-lime-500", "outline-lime-600", "outline-lime-700", "outline-lime-800", "outline-lime-900",
+        "outline-green-50", "outline-green-100", "outline-green-200", "outline-green-300", "outline-green-400", "outline-green-500", "outline-green-600", "outline-green-700", "outline-green-800", "outline-green-900",
+        "outline-emerald-50", "outline-emerald-100", "outline-emerald-200", "outline-emerald-300", "outline-emerald-400", "outline-emerald-500", "outline-emerald-600", "outline-emerald-700", "outline-emerald-800", "outline-emerald-900",
+        "outline-teal-50", "outline-teal-100", "outline-teal-200", "outline-teal-300", "outline-teal-400", "outline-teal-500", "outline-teal-600", "outline-teal-700", "outline-teal-800", "outline-teal-900",
+        "outline-cyan-50", "outline-cyan-100", "outline-cyan-200", "outline-cyan-300", "outline-cyan-400", "outline-cyan-500", "outline-cyan-600", "outline-cyan-700", "outline-cyan-800", "outline-cyan-900",
+        "outline-sky-50", "outline-sky-100", "outline-sky-200", "outline-sky-300", "outline-sky-400", "outline-sky-500", "outline-sky-600", "outline-sky-700", "outline-sky-800", "outline-sky-900",
+        "outline-blue-50", "outline-blue-100", "outline-blue-200", "outline-blue-300", "outline-blue-400", "outline-blue-500", "outline-blue-600", "outline-blue-700", "outline-blue-800", "outline-blue-900",
+        "outline-indigo-50", "outline-indigo-100", "outline-indigo-200", "outline-indigo-300", "outline-indigo-400", "outline-indigo-500", "outline-indigo-600", "outline-indigo-700", "outline-indigo-800", "outline-indigo-900",
+        "outline-violet-50", "outline-violet-100", "outline-violet-200", "outline-violet-300", "outline-violet-400", "outline-violet-500", "outline-violet-600", "outline-violet-700", "outline-violet-800", "outline-violet-900",
+        "outline-purple-50", "outline-purple-100", "outline-purple-200", "outline-purple-300", "outline-purple-400", "outline-purple-500", "outline-purple-600", "outline-purple-700", "outline-purple-800", "outline-purple-900",
+        "outline-fuchsia-50", "outline-fuchsia-100", "outline-fuchsia-200", "outline-fuchsia-300", "outline-fuchsia-400", "outline-fuchsia-500", "outline-fuchsia-600", "outline-fuchsia-700", "outline-fuchsia-800", "outline-fuchsia-900",
+        "outline-pink-50", "outline-pink-100", "outline-pink-200", "outline-pink-300", "outline-pink-400", "outline-pink-500", "outline-pink-600", "outline-pink-700", "outline-pink-800", "outline-pink-900",
+        "outline-rose-50", "outline-rose-100", "outline-rose-200", "outline-rose-300", "outline-rose-400", "outline-rose-500", "outline-rose-600", "outline-rose-700", "outline-rose-800", "outline-rose-900",
+
+        // ---
+
+        // outline-style, outline-offset
+
+        // Outline Style
+        "outline-none", "outline", "outline-dashed", "outline-dotted", "outline-double",
+
+        // Outline Offset
+        "outline-offset-0", "outline-offset-1", "outline-offset-2", "outline-offset-4", "outline-offset-8",
+
+        // ---
+
+        // box-shadow, opacity, mix-blend-mode, background-blend-mode
+
+        // Box Shadow
+        "shadow", "shadow-sm", "shadow-md", "shadow-lg", "shadow-xl", "shadow-2xl", "shadow-inner", "shadow-none",
+
+        // Opacity
+        "opacity-0", "opacity-5", "opacity-10", "opacity-20", "opacity-25", "opacity-30",
+        "opacity-40", "opacity-50", "opacity-60", "opacity-70", "opacity-75", "opacity-80",
+        "opacity-90", "opacity-95", "opacity-100",
+
+        // Mix Blend Mode
+        "mix-blend-normal", "mix-blend-multiply", "mix-blend-screen", "mix-blend-overlay",
+        "mix-blend-darken", "mix-blend-lighten", "mix-blend-color-dodge", "mix-blend-color-burn",
+        "mix-blend-hard-light", "mix-blend-soft-light", "mix-blend-difference", "mix-blend-exclusion",
+        "mix-blend-hue", "mix-blend-saturation", "mix-blend-color", "mix-blend-luminosity",
+
+        // Background Blend Mode
+        "bg-blend-normal", "bg-blend-multiply", "bg-blend-screen", "bg-blend-overlay",
+        "bg-blend-darken", "bg-blend-lighten", "bg-blend-color-dodge", "bg-blend-color-burn",
+        "bg-blend-hard-light", "bg-blend-soft-light", "bg-blend-difference", "bg-blend-exclusion",
+        "bg-blend-hue", "bg-blend-saturation", "bg-blend-color", "bg-blend-luminosity",
+
+        // ---
+
+        // filter, blur, brightness, contrast
+
+        // Filter
+        "filter", "filter-none",
+
+        // Blur
+        "blur", "blur-none", "blur-sm", "blur-md", "blur-lg", "blur-xl", "blur-2xl", "blur-3xl",
+
+        // Brightness
+        "brightness-0", "brightness-50", "brightness-75", "brightness-90",
+        "brightness-95", "brightness-100", "brightness-105", "brightness-110",
+        "brightness-125", "brightness-150", "brightness-200",
+
+        // Contrast
+        "contrast-0", "contrast-50", "contrast-75", "contrast-100",
+        "contrast-125", "contrast-150", "contrast-200",
+
+        // ---
 
 
+        // drop-shadow, grayscale, hue-rotate, invert, saturate, sepia
 
+        // Drop Shadow
+        "drop-shadow", "drop-shadow-none", "drop-shadow-sm", "drop-shadow-md",
+        "drop-shadow-lg", "drop-shadow-xl", "drop-shadow-2xl",
+
+        // Grayscale
+        "grayscale", "grayscale-0",
+
+        // Hue Rotate
+        "hue-rotate-0", "hue-rotate-15", "hue-rotate-30", "hue-rotate-60",
+        "hue-rotate-90", "hue-rotate-180",
+
+        // Invert
+        "invert", "invert-0",
+
+        // Saturate
+        "saturate-0", "saturate-50", "saturate-100", "saturate-150", "saturate-200",
+
+        // Sepia
+        "sepia", "sepia-0",
+
+
+        // ---
+
+        // backdrop-filter, blur, brightness, contrast, grayscale
+
+        // Backdrop Filter
+        "backdrop-filter", "backdrop-none",
+
+        // Backdrop Blur
+        "backdrop-blur", "backdrop-blur-none", "backdrop-blur-sm", "backdrop-blur-md",
+        "backdrop-blur-lg", "backdrop-blur-xl", "backdrop-blur-2xl", "backdrop-blur-3xl",
+
+        // Backdrop Brightness
+        "backdrop-brightness-0", "backdrop-brightness-50", "backdrop-brightness-75",
+        "backdrop-brightness-90", "backdrop-brightness-95", "backdrop-brightness-100",
+        "backdrop-brightness-105", "backdrop-brightness-110", "backdrop-brightness-125",
+        "backdrop-brightness-150", "backdrop-brightness-200",
+
+        // Backdrop Contrast
+        "backdrop-contrast-0", "backdrop-contrast-50", "backdrop-contrast-75",
+        "backdrop-contrast-100", "backdrop-contrast-125", "backdrop-contrast-150",
+        "backdrop-contrast-200",
+
+        // Backdrop Grayscale
+        "backdrop-grayscale", "backdrop-grayscale-0",
+
+        // ---
+
+        // Tables, border-collapse, border-spacing, table-layout, caption-side
+
+        // Tables
+        "table-auto", "table-fixed",
+
+        // Border Collapse
+        "border-collapse", "border-separate",
+
+        // Border Spacing
+        "border-spacing-0", "border-spacing-1", "border-spacing-2",
+        "border-spacing-3", "border-spacing-4", "border-spacing-5",
+        "border-spacing-6", "border-spacing-8", "border-spacing-10",
+        "border-spacing-12", "border-spacing-16", "border-spacing-20",
+        "border-spacing-24", "border-spacing-32", "border-spacing-40",
+        "border-spacing-48", "border-spacing-56", "border-spacing-64",
+
+        // Caption Side
+        "caption-top", "caption-bottom",
+
+        // ---
+
+        // Transitions & Animation, transition-property, transition-behavior, transition-duration
+
+        // Transition Property
+        "transition-none", "transition-all", "transition",
+        "transition-colors", "transition-opacity", "transition-shadow",
+        "transition-transform",
+
+        // Transition Behavior
+        "motion-safe:transition", "motion-reduce:transition-none",
+
+        // Transition Duration
+        "duration-75", "duration-100", "duration-150", "duration-200",
+        "duration-300", "duration-500", "duration-700", "duration-1000",
+
+        // ---
+
+        // transition-timing-function, transition-delay, animation
+
+        // Transition Property
+        "transition-none", "transition-all", "transition",
+        "transition-colors", "transition-opacity", "transition-shadow",
+        "transition-transform",
+
+        // Transition Behavior
+        "motion-safe:transition", "motion-reduce:transition-none",
+
+        // Transition Duration
+        "duration-75", "duration-100", "duration-150", "duration-200",
+        "duration-300", "duration-500", "duration-700", "duration-1000",
+
+        // Transition Timing Function
+        "ease-linear", "ease-in", "ease-out", "ease-in-out",
+
+        // Transition Delay
+        "delay-75", "delay-100", "delay-150", "delay-200",
+        "delay-300", "delay-500", "delay-700", "delay-1000",
+
+        // Animation
+        "animate-none", "animate-spin", "animate-ping",
+        "animate-pulse", "animate-bounce",
+
+        // ---
+
+        // Transforms, backface-visibility, perspective, perspective-origin, rotate, scale
+
+        // Backface Visibility
+        "backface-visible", "backface-hidden",
+
+        // Perspective
+        "perspective-0", "perspective-100", "perspective-200",
+        "perspective-300", "perspective-400", "perspective-500",
+        "perspective-750", "perspective-1000", "perspective-1250",
+        "perspective-1500",
+
+        // Perspective Origin
+        "perspective-origin-center", "perspective-origin-top",
+        "perspective-origin-bottom", "perspective-origin-left",
+        "perspective-origin-right", "perspective-origin-top-left",
+        "perspective-origin-top-right", "perspective-origin-bottom-left",
+        "perspective-origin-bottom-right",
+
+        // Rotate
+        "rotate-0", "rotate-1", "rotate-2", "rotate-3", "rotate-6",
+        "rotate-12", "rotate-45", "rotate-90", "rotate-180",
+        "-rotate-1", "-rotate-2", "-rotate-3", "-rotate-6",
+        "-rotate-12", "-rotate-45", "-rotate-90", "-rotate-180",
+
+        // Scale
+        "scale-0", "scale-50", "scale-75", "scale-90", "scale-95",
+        "scale-100", "scale-105", "scale-110", "scale-125",
+        "scale-150", "scale-200",
+        "scale-x-0", "scale-x-50", "scale-x-75", "scale-x-90",
+        "scale-x-95", "scale-x-100", "scale-x-105", "scale-x-110",
+        "scale-x-125", "scale-x-150", "scale-x-200",
+        "scale-y-0", "scale-y-50", "scale-y-75", "scale-y-90",
+        "scale-y-95", "scale-y-100", "scale-y-105", "scale-y-110",
+        "scale-y-125", "scale-y-150", "scale-y-200",
+
+        // ---
+
+        // skew, transform, transform-origin, transform-style, translate
+        // Skew
+        "skew-0", "skew-1", "skew-2", "skew-3", "skew-6",
+        "skew-12", "-skew-1", "-skew-2", "-skew-3", "-skew-6",
+        "-skew-12",
+
+        // Transform (Default)
+        "transform", "transform-none",
+
+        // Transform Origin
+        "origin-center", "origin-top", "origin-top-right",
+        "origin-right", "origin-bottom-right", "origin-bottom",
+        "origin-bottom-left", "origin-left", "origin-top-left",
+
+        // Transform Style
+        "transform-style-flat", "transform-style-preserve-3d",
+
+        // Translate
+        "translate-x-0", "translate-x-1", "translate-x-2",
+        "translate-x-3", "translate-x-4", "translate-x-5",
+        "translate-x-6", "translate-x-8", "translate-x-10",
+        "translate-x-12", "translate-x-16", "translate-x-20",
+        "translate-x-24", "translate-x-32", "translate-x-40",
+        "translate-x-48", "translate-x-56", "translate-x-64",
+        "translate-x-72", "translate-x-80", "translate-x-96",
+        "-translate-x-1", "-translate-x-2", "-translate-x-3",
+        "-translate-x-4", "-translate-x-5", "-translate-x-6",
+        "-translate-x-8", "-translate-x-10", "-translate-x-12",
+        "-translate-x-16", "-translate-x-20", "-translate-x-24",
+        "-translate-x-32", "-translate-x-40", "-translate-x-48",
+        "-translate-x-56", "-translate-x-64", "-translate-x-72",
+        "-translate-x-80", "-translate-x-96",
+
+        "translate-y-0", "translate-y-1", "translate-y-2",
+        "translate-y-3", "translate-y-4", "translate-y-5",
+        "translate-y-6", "translate-y-8", "translate-y-10",
+        "translate-y-12", "translate-y-16", "translate-y-20",
+        "translate-y-24", "translate-y-32", "translate-y-40",
+        "translate-y-48", "translate-y-56", "translate-y-64",
+        "translate-y-72", "translate-y-80", "translate-y-96",
+        "-translate-y-1", "-translate-y-2", "-translate-y-3",
+        "-translate-y-4", "-translate-y-5", "-translate-y-6",
+        "-translate-y-8", "-translate-y-10", "-translate-y-12",
+        "-translate-y-16", "-translate-y-20", "-translate-y-24",
+        "-translate-y-32", "-translate-y-40", "-translate-y-48",
+        "-translate-y-56", "-translate-y-64", "-translate-y-72",
+        "-translate-y-80", "-translate-y-96",
+
+        // ---
+        // Interactivity, accent-color, appearance, caret-color
+
+        // Accent Color
+        "accent-inherit", "accent-current", "accent-transparent",
+        "accent-black", "accent-white", "accent-slate-50", "accent-slate-100",
+        "accent-slate-200", "accent-slate-300", "accent-slate-400",
+        "accent-slate-500", "accent-slate-600", "accent-slate-700",
+        "accent-slate-800", "accent-slate-900", "accent-gray-50",
+        "accent-gray-100", "accent-gray-200", "accent-gray-300",
+        "accent-gray-400", "accent-gray-500", "accent-gray-600",
+        "accent-gray-700", "accent-gray-800", "accent-gray-900",
+        "accent-red-50", "accent-red-100", "accent-red-200",
+        "accent-red-300", "accent-red-400", "accent-red-500",
+        "accent-red-600", "accent-red-700", "accent-red-800",
+        "accent-red-900", "accent-yellow-50", "accent-yellow-100",
+        "accent-yellow-200", "accent-yellow-300", "accent-yellow-400",
+        "accent-yellow-500", "accent-yellow-600", "accent-yellow-700",
+        "accent-yellow-800", "accent-yellow-900", "accent-green-50",
+        "accent-green-100", "accent-green-200", "accent-green-300",
+        "accent-green-400", "accent-green-500", "accent-green-600",
+        "accent-green-700", "accent-green-800", "accent-green-900",
+        "accent-blue-50", "accent-blue-100", "accent-blue-200",
+        "accent-blue-300", "accent-blue-400", "accent-blue-500",
+        "accent-blue-600", "accent-blue-700", "accent-blue-800",
+        "accent-blue-900", "accent-indigo-50", "accent-indigo-100",
+        "accent-indigo-200", "accent-indigo-300", "accent-indigo-400",
+        "accent-indigo-500", "accent-indigo-600", "accent-indigo-700",
+        "accent-indigo-800", "accent-indigo-900", "accent-purple-50",
+        "accent-purple-100", "accent-purple-200", "accent-purple-300",
+        "accent-purple-400", "accent-purple-500", "accent-purple-600",
+        "accent-purple-700", "accent-purple-800", "accent-purple-900",
+
+        // Appearance
+        "appearance-none", "appearance-auto",
+
+        // Caret Color
+        "caret-transparent", "caret-current",
+        "caret-black", "caret-white", "caret-slate-50", "caret-slate-100",
+        "caret-slate-200", "caret-slate-300", "caret-slate-400",
+        "caret-slate-500", "caret-slate-600", "caret-slate-700",
+        "caret-slate-800", "caret-slate-900", "caret-gray-50",
+        "caret-gray-100", "caret-gray-200", "caret-gray-300",
+        "caret-gray-400", "caret-gray-500", "caret-gray-600",
+        "caret-gray-700", "caret-gray-800", "caret-gray-900",
+        "caret-red-50", "caret-red-100", "caret-red-200",
+        "caret-red-300", "caret-red-400", "caret-red-500",
+        "caret-red-600", "caret-red-700", "caret-red-800",
+        "caret-red-900", "caret-yellow-50", "caret-yellow-100",
+        "caret-yellow-200", "caret-yellow-300", "caret-yellow-400",
+        "caret-yellow-500", "caret-yellow-600", "caret-yellow-700",
+        "caret-yellow-800", "caret-yellow-900", "caret-green-50",
+        "caret-green-100", "caret-green-200", "caret-green-300",
+        "caret-green-400", "caret-green-500", "caret-green-600",
+        "caret-green-700", "caret-green-800", "caret-green-900",
+        "caret-blue-50", "caret-blue-100", "caret-blue-200",
+        "caret-blue-300", "caret-blue-400", "caret-blue-500",
+        "caret-blue-600", "caret-blue-700", "caret-blue-800",
+        "caret-blue-900", "caret-indigo-50", "caret-indigo-100",
+        "caret-indigo-200", "caret-indigo-300", "caret-indigo-400",
+        "caret-indigo-500", "caret-indigo-600", "caret-indigo-700",
+        "caret-indigo-800", "caret-indigo-900", "caret-purple-50",
+        "caret-purple-100", "caret-purple-200", "caret-purple-300",
+        "caret-purple-400", "caret-purple-500", "caret-purple-600",
+        "caret-purple-700", "caret-purple-800", "caret-purple-900",
+
+        // ---
+
+        // color-scheme, cursor, field-sizing, pointer-events, resize
+        // Color Scheme
+        "color-scheme-light", "color-scheme-dark", "color-scheme-auto",
+
+        // Cursor
+        "cursor-auto", "cursor-default", "cursor-pointer", "cursor-wait",
+        "cursor-text", "cursor-move", "cursor-help", "cursor-not-allowed",
+        "cursor-none", "cursor-context-menu", "cursor-progress",
+        "cursor-cell", "cursor-crosshair", "cursor-vertical-text",
+        "cursor-alias", "cursor-copy", "cursor-no-drop", "cursor-grab",
+        "cursor-grabbing", "cursor-all-scroll", "cursor-col-resize",
+        "cursor-row-resize", "cursor-n-resize", "cursor-e-resize",
+        "cursor-s-resize", "cursor-w-resize", "cursor-ne-resize",
+        "cursor-nw-resize", "cursor-se-resize", "cursor-sw-resize",
+        "cursor-ew-resize", "cursor-ns-resize", "cursor-nesw-resize",
+        "cursor-nwse-resize", "cursor-zoom-in", "cursor-zoom-out",
+
+        // Field Sizing
+        "size-auto", "size-px", "size-0", "size-0.5", "size-1",
+        "size-1.5", "size-2", "size-2.5", "size-3", "size-3.5",
+        "size-4", "size-5", "size-6", "size-7", "size-8", "size-9",
+        "size-10", "size-11", "size-12", "size-14", "size-16",
+        "size-20", "size-24", "size-28", "size-32", "size-36",
+        "size-40", "size-44", "size-48", "size-52", "size-56",
+        "size-60", "size-64", "size-72", "size-80", "size-96",
+        "size-full", "size-screen", "size-min", "size-max", "size-fit",
+
+        // Pointer Events
+        "pointer-events-none", "pointer-events-auto",
+
+        // Resize
+        "resize-none", "resize-y", "resize-x", "resize",
+
+        // ---
+
+        // scroll-behavior, scroll-margin, scroll-padding, scroll-snap-align, scroll-snap-stop, scroll-snap-type, touch-action, user-select, will-change
+        // Scroll Behavior
+        "scroll-auto", "scroll-smooth",
+
+        // Scroll Margin
+        "scroll-m-0", "scroll-m-1", "scroll-m-2", "scroll-m-3", "scroll-m-4",
+        "scroll-m-5", "scroll-m-6", "scroll-m-7", "scroll-m-8", "scroll-m-9",
+        "scroll-m-10", "scroll-m-11", "scroll-m-12", "scroll-m-14", "scroll-m-16",
+        "scroll-m-20", "scroll-m-24", "scroll-m-28", "scroll-m-32", "scroll-m-36",
+        "scroll-m-40", "scroll-m-44", "scroll-m-48", "scroll-m-52", "scroll-m-56",
+        "scroll-m-60", "scroll-m-64", "scroll-m-72", "scroll-m-80", "scroll-m-96",
+        "scroll-mx-0", "scroll-mx-1", "scroll-mx-2", "scroll-mx-3", "scroll-mx-4",
+        "scroll-mx-5", "scroll-mx-6", "scroll-mx-7", "scroll-mx-8", "scroll-mx-9",
+        "scroll-mx-10", "scroll-mx-12", "scroll-mx-16", "scroll-mx-20", "scroll-mx-24",
+        "scroll-mx-32", "scroll-my-0", "scroll-my-1", "scroll-my-2", "scroll-my-3",
+        "scroll-my-4", "scroll-my-5", "scroll-my-6", "scroll-my-7", "scroll-my-8",
+        "scroll-my-9", "scroll-my-10", "scroll-my-12", "scroll-my-16", "scroll-my-20",
+        "scroll-my-24", "scroll-my-32",
+
+        // Scroll Padding
+        "scroll-p-0", "scroll-p-1", "scroll-p-2", "scroll-p-3", "scroll-p-4",
+        "scroll-p-5", "scroll-p-6", "scroll-p-7", "scroll-p-8", "scroll-p-9",
+        "scroll-p-10", "scroll-p-12", "scroll-p-16", "scroll-p-20", "scroll-p-24",
+        "scroll-p-32",
+
+        // Scroll Snap Align
+        "snap-start", "snap-end", "snap-center", "snap-align-none",
+
+        // Scroll Snap Stop
+        "snap-normal", "snap-always",
+
+        // Scroll Snap Type
+        "snap-none", "snap-x", "snap-y", "snap-both",
+        "snap-mandatory", "snap-proximity",
+
+        // Touch Action
+        "touch-auto", "touch-none", "touch-pan-x", "touch-pan-left",
+        "touch-pan-right", "touch-pan-y", "touch-pan-up", "touch-pan-down",
+        "touch-pinch-zoom", "touch-manipulation",
+
+        // User Select
+        "select-none", "select-text", "select-all", "select-auto",
+
+        // Will Change
+        "will-change-auto", "will-change-scroll", "will-change-contents",
+        "will-change-transform",
+
+        // ---
+
+        // SVG, fill, stroke, stroke-width
+        // Fill
+        "fill-none", "fill-inherit", "fill-current",
+        "fill-transparent", "fill-black", "fill-white",
+        "fill-gray-50", "fill-gray-100", "fill-gray-200",
+        "fill-gray-300", "fill-gray-400", "fill-gray-500",
+        "fill-gray-600", "fill-gray-700", "fill-gray-800",
+        "fill-gray-900", "fill-red-50", "fill-red-100",
+        "fill-red-200", "fill-red-300", "fill-red-400",
+        "fill-red-500", "fill-red-600", "fill-red-700",
+        "fill-red-800", "fill-red-900", "fill-blue-50",
+        "fill-blue-100", "fill-blue-200", "fill-blue-300",
+        "fill-blue-400", "fill-blue-500", "fill-blue-600",
+        "fill-blue-700", "fill-blue-800", "fill-blue-900",
+        "fill-green-50", "fill-green-100", "fill-green-200",
+        "fill-green-300", "fill-green-400", "fill-green-500",
+        "fill-green-600", "fill-green-700", "fill-green-800",
+        "fill-green-900", "fill-yellow-50", "fill-yellow-100",
+        "fill-yellow-200", "fill-yellow-300", "fill-yellow-400",
+        "fill-yellow-500", "fill-yellow-600", "fill-yellow-700",
+        "fill-yellow-800", "fill-yellow-900", "fill-purple-50",
+        "fill-purple-100", "fill-purple-200", "fill-purple-300",
+        "fill-purple-400", "fill-purple-500", "fill-purple-600",
+        "fill-purple-700", "fill-purple-800", "fill-purple-900",
+
+        // Stroke
+        "stroke-none", "stroke-inherit", "stroke-current",
+        "stroke-transparent", "stroke-black", "stroke-white",
+        "stroke-gray-50", "stroke-gray-100", "stroke-gray-200",
+        "stroke-gray-300", "stroke-gray-400", "stroke-gray-500",
+        "stroke-gray-600", "stroke-gray-700", "stroke-gray-800",
+        "stroke-gray-900", "stroke-red-50", "stroke-red-100",
+        "stroke-red-200", "stroke-red-300", "stroke-red-400",
+        "stroke-red-500", "stroke-red-600", "stroke-red-700",
+        "stroke-red-800", "stroke-red-900", "stroke-blue-50",
+        "stroke-blue-100", "stroke-blue-200", "stroke-blue-300",
+        "stroke-blue-400", "stroke-blue-500", "stroke-blue-600",
+        "stroke-blue-700", "stroke-blue-800", "stroke-blue-900",
+        "stroke-green-50", "stroke-green-100", "stroke-green-200",
+        "stroke-green-300", "stroke-green-400", "stroke-green-500",
+        "stroke-green-600", "stroke-green-700", "stroke-green-800",
+        "stroke-green-900", "stroke-yellow-50", "stroke-yellow-100",
+        "stroke-yellow-200", "stroke-yellow-300", "stroke-yellow-400",
+        "stroke-yellow-500", "stroke-yellow-600", "stroke-yellow-700",
+        "stroke-yellow-800", "stroke-yellow-900", "stroke-purple-50",
+        "stroke-purple-100", "stroke-purple-200", "stroke-purple-300",
+        "stroke-purple-400", "stroke-purple-500", "stroke-purple-600",
+        "stroke-purple-700", "stroke-purple-800", "stroke-purple-900",
+
+        // Stroke Width
+        "stroke-0", "stroke-1", "stroke-2",
+
+        // ---
+
+        // Accessibility, forced-color-adjust
+
+        // Forced Color Adjust
+        "forced-color-adjust-auto",
+        "forced-color-adjust-none",
+        
     ],
     theme: {
         extend: {},
